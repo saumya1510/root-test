@@ -6,7 +6,8 @@ To run the tests, enter "python -m unittest tester"
 
 ## Approach Overview:
 My program reads the file which contains the required input. It stores the driver and trip details in a Python Dictionary object. The dictionary would be of the form:  
-	> {driver name: (total distance, total time)}
+> {driver name: (total distance, total time)}  
+
 The values of distance and time would be updated while reading the input. Here, if the speed for that trip (distance/time) is not between 5 and 100, it won't be added to the dictionary. Once the entire file is read and parsed, the program calculates average speed for all drivers and prints the speed and the distance to an output file. 
 
 ### Assumptions:
