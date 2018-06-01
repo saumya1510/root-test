@@ -19,10 +19,10 @@ The program is made to be fault tolerant. However, some assumptions are made, as
 ## Approach in Detail:
 
 1. **Built-in objects**  
-If required, it would have been possible to create a class for the drivers and add the methods for sorting, and updating the values to that class. That would have been the ideal way of solving this problem, if there was a scope for reusability of the objects or expansion of the problem. However, that isn't the case here. Going all-out by building classes for the trips, time strings would introduce more abstraction than what was required. This seemed like adding abstraction just for the sake of it, when the problem could be solved using existing objects and classes.
+If required, it would have been possible to create a class for the drivers and add the methods for sorting, and updating the values to that class. That would have been the ideal way of solving this problem, if there was a scope for reusability of the objects or expansion of the problem. However, that isn't the case here. Going all-out by building classes for the trips, time strings would introduce more abstraction than what was required. This seemed like adding abstraction just for the sake of it, when the problem could be solved using existing objects and classes.  
 I used a simple approach instead, of using built-in objects. Python provides dictionaries and tuples objects. Dictionaries help store data in a key-value format, are mutable and provide quick reads (O(1)). I used tuples to store the trip data for each driver, as these are immutable, and can store data of different types. The structure only stores 3 values, so there is no issue in readability either. 
 
-2.**Reusability and Abstraction**  
+2. **Reusability and Abstraction**  
 While writing the code, I realized there is in fact some scope for reusability. It was possible to make some functions abstract and use them outside the scope of this problem. Thus, I created separate libraries of helper functions. These are some basic functions dealing with dictionaries, tuples and time strings, which can be used again if required. One would just need to import them to their code, as we do with libraries in Python.
 
 3. **Testing**  
