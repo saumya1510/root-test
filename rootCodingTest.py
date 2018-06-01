@@ -34,7 +34,7 @@ def checkTripSpeed(distance, time, lowerLimit = 5, upperLimit = 100):
 	Args:
 		Distance, Time, Lower Limit, Upper Limit.
 	Returns:
-		Boolean.
+		Boolean: True if the speed is within the limits, else False.
 	"""
 	if not time:
 		print("Time is 0!")
