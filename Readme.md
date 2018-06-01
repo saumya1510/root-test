@@ -1,6 +1,3 @@
-**Problem statement:**
-https://gist.github.com/dan-manges/1e1854d0704cb9132b74
-
 To run this program, enter "python rootCodingTest.py <filename>" in your terminal. A sample file has been provided called "input".
 To run the tests, enter "python -m unittest tester"
 
