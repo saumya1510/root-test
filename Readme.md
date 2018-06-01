@@ -1,22 +1,21 @@
-Problem statement:
+**Problem statement:**
 https://gist.github.com/dan-manges/1e1854d0704cb9132b74
 
 To run this program, enter "python rootCodingTest.py <filename>" in your terminal. A sample file has been provided called "input".
 To run the tests, enter "python -m unittest tester"
 
-Approach Overview:
-My program reads the file which contains the required input. It stores the driver and trip details in a Python Dictionary object. The dictionary would be of the form:
-	{driver name: (total distance, total time)}
+## Approach Overview:
+My program reads the file which contains the required input. It stores the driver and trip details in a Python Dictionary object. The dictionary would be of the form:  
+	> {driver name: (total distance, total time)}
 The values of distance and time would be updated while reading the input. Here, if the speed for that trip (distance/time) is not between 5 and 100, it won't be added to the dictionary. Once the entire file is read and parsed, the program calculates average speed for all drivers and prints the speed and the distance to an output file. 
 
-
-Assumptions:
+### Assumptions:
 The program is made to be fault tolerant. However, some assumptions are made, as follows:
 1. The driver names would be unique.
 2. Average Speed = total distance/total time
 
 
-Approach in Detail:
+## Approach in Detail:
 
 1. Built-in objects
 If required, it would have been possible to create a class for the drivers and add the methods for sorting, and updating the values to that class. That would have been the ideal way of solving this problem, if there was a scope for reusability of the objects or expansion of the problem. However, that isn't the case here. Going all-out by building classes for the trips, time strings would introduce more abstraction than what was required. This seemed like adding abstraction just for the sake of it, when the problem could be solved using existing objects and classes.
