@@ -1,4 +1,4 @@
-To run this program, enter "python rootCodingTest.py <filename>" in your terminal. A sample file has been provided called "input".
+To run this program, enter "python rootCodingTest.py <filename>" in your terminal. A sample file has been provided called "input".  
 To run the tests, enter "python -m unittest tester"
 
 ## Approach Overview:
